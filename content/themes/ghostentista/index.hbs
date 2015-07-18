@@ -1,0 +1,93 @@
+{{!< default}}
+<main id="main-content" class="content" role="main">
+
+	<div class="article-wrapper">
+	{{#if pagination.prev}}
+
+		<div id="timeline" data-columns>
+
+		{{#foreach posts ~}}
+
+		<article class="item loading {{post_class}}{{#if featured}} featured{{/if}}">
+			<header class="post-header">
+		            <span class="post-meta">
+		                  <time datetime="{{date published_at timeago="true"}}">{{date published_at timeago="true"}}</time>
+		                  {{#if tags}}<span class="tagged"> on {{tags}}</span>{{/if}}
+		            </span>
+				<h2 class="post-title"><a href="{{url}}" title="{{title}}">{{{title}}}</a></h2>
+		      </header>
+		      <section class="post-excerpt">
+		          <p>{{excerpt}}&hellip; <a href="{{url}}" title="{{title}}" class="more-link">Read&nbsp;more&nbsp;&rarr;</a></p>
+		      </section>
+		  </article>
+
+
+		{{~/foreach}}
+
+            </div>
+
+	{{else}}
+
+		{{#foreach posts ~}}
+
+			{{#if @first}}
+	                  <article class="item loading latest-post">
+	                        <header class="post-header">
+	                              <span class="post-meta">
+	                                    <time datetime="{{date published_at timeago="true"}}">{{date published_at timeago="true"}}</time>
+		                              {{#if tags}}<span class="tagged"> on {{tags}}</span>{{/if}}
+	                              </span>
+						<h2 class="post-title"><a href="{{url}}" title="{{title}}">{{{title}}}</a></h2>
+					</header>
+	                        <section class="post-excerpt">
+	                              <p>{{excerpt}}&hellip; <a href="{{url}}" title="{{title}}" class="more-link">Read&nbsp;more&nbsp;&rarr;</a></p>
+					</section>
+	                  </article>
+
+			{{/if}}
+
+		{{~/foreach}}
+
+            <div id="timeline" data-columns>
+
+		{{#foreach posts}}
+
+			{{#unless @first}}
+	                  <article class="item loading {{post_class}}">
+	                        <header class="post-header">
+				            <span class="post-meta">
+				                  <time datetime="{{date published_at timeago="true"}}">{{date published_at timeago="true"}}</time>
+					                  {{#if tags}}<span class="tagged"> on {{tags}}</span>{{/if}}
+				            </span>
+	                              <h2 class="post-title"><a href="{{url}}" title="{{title}}">{{{title}}}</a></h2>
+	                        </header>
+	                        <section class="post-excerpt">
+	                              <p>{{excerpt}}&hellip; <a href="{{url}}" title="{{title}}" class="more-link">Read&nbsp;more&nbsp;&rarr;</a></p>
+	                        </section>
+	                  </article>
+
+			{{/unless}}
+		{{/foreach}}
+
+		</div>
+	{{/if}}
+
+	</div>
+
+	<div class="cf"></div>
+	<nav id="pagination">
+	    {{#if pagination.prev}}
+	        <a href="{{pageUrl pagination.prev}}" id="prev-posts">&laquo; Previous page</a>
+	    {{/if}}
+	    {{#if pagination.next}}
+	        <a href="{{pageUrl pagination.next}}" id="next-posts">&raquo; Next page</a>
+	    {{/if}}
+	</nav>
+</main>
+
+<ul id="related-posts-container" class="hidden">
+	{{#foreach posts}}
+          <li><a href="{{url}}" title="{{title}}">{{title}} &rarr;</a></li>
+	{{/foreach}}
+</ul>
+

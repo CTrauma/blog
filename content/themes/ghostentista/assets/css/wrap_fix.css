@@ -1,0 +1,21 @@
+code {  
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* IE 5.5+ */
+    font-size:20%;
+}
+
+pre.line-numbers > code {
+  position: relative;
+  padding-left: 40px;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; 
+  left: -20px;
+}
+

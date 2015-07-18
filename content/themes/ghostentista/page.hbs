@@ -1,0 +1,25 @@
+{{!< default}}
+<main id="main-content" class="content" role="main">
+    <div class="article-wrapper">
+        <article class="loading detail-post">
+
+		  {{! Everything inside the #post tags pulls data from the post }}
+		  {{#post}}
+
+		  {{! Everything below outputs content of the the post which has been published }}
+                  <span class="post-meta" name="post-content"><time
+                          datetime="{{date published_at timeago="true"}}">{{date published_at timeago="true"}}</time> {{#if tags}}
+                      on {{tags separator=" | "}}{{/if}}</span>
+
+                  <h1 class="post-title">{{{title}}}</h1>
+
+                  <section class="post-content">
+				{{content}}
+                  </section>
+
+		  {{/post}}
+
+        </article>
+    </div>
+
+</main>

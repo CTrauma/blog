@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}"/>
+
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
+    <!-- <script src="//polyfill.io/"></script> -->
+    <script src="{{asset "/js/config.js"}}"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" src="//polyfill.io/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.min.css"}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism-line-numbers.css"}}" />  
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism_theme.css"}}" />
+	{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <a href="/" title="{{@blog.title}} - {{@blog.description}}">
+            <div id="site-head-content" class="inner">
+                <h1 class="blog-title{{#if @blog.logo}} image-logo{{/if}}"{{#if @blog.logo}}
+                    style="background-image: url('{{@blog.logo}}')"{{/if}}>
+			    {{@blog.title}}
+                </h1>
+            </div>
+        </a>
+    </div>
+</header>
+
+{{{body}}}
+
+<footer class="site-footer">
+    <div class="inner">
+        <div class="about">
+            <h3>About {{@blog.title}}</h3>
+            <p>{{@blog.description}}</p>
+        </div>
+        <div class="get-connected">
+            <p></p>
+            <p class="poweredby">
+                Proudly powered by <a href="http://www.ghost.org" target="_blank">GHOST</a>.<br/>
+                Theme <a href="https://github.com/viktorbezdek/ghostentista" title="ghostentista 1.0.0 beta by Viktor Bezdek">ghostentista</a>
+                by <a href="http://www.viktorbezdek.cz">Viktor Bezdek</a>.
+            </p>
+        </div>
+    </div>
+</footer>
+
+{{ghost_foot}}
+<script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/prism-line-numbers.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/prism-custom-line-numbers.js"}}"></script>
+<script src="{{asset "js/index.min.js"}}"></script>
+
+</body>
+</html>
