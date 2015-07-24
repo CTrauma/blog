@@ -41,11 +41,18 @@
 				</nav>
 	                  {{#if author.bio}}
 				<section class="author">
-				  <div class="image"><img src="{{author.image}}" title="{{author.name}}"/></div>
-				  <div class="about">
-				      <h4>{{author.name}}</h4>
-				      <p>{{author.bio}}</p>
-				  </div>
+				 <img src="{{author.image}}" title="{{author.name}}"/>
+
+				      <section class="author-name">{{author.name}}</section><section class="author-bio">{{author.bio}}</section>
+				<div style="float: right;vertical-align:text-top;width: 100%;position: relative;">
+            <div class="social-links">
+                <a href="http://www.twitter.com/chalktrauma"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/in/wscottdillman/"><i class="fa fa-linkedin"></i></a>
+                <a href="http://instagram.com/chalktrauma"><i class="fa fa-instagram"></i></a>
+                <a href="mailto:c.trauma@dreamcycle.net"><i class="fa fa-envelope-o"></i></a>
+                <a href="http://careers.stackoverflow.com/wscottdillman"><i class="fa fa-file-text-o"></i></a>
+            </div>
+          </div>
 				</section>
 				{{/if}}
                   </footer>
