@@ -34,7 +34,7 @@ code[class*="language-"]{
 }
 
 main.content article h1.post-title {
-font-size: 1.0em;
+font-size: 3.0em;
 }
 
 main.content article .post-content h1 {
@@ -51,7 +51,7 @@ font-size: 2.25em;
 
 
 main.content article h2.post-title{
-    font-size: 1.0em;
+    font-size: 2.5em;
 }
 
 .social-links{
