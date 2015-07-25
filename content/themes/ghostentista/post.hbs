@@ -35,12 +35,14 @@
                   </section>
 
                   <footer class="post-footer">
+
 				<nav class="related-posts">
 				  <h4>Related posts</h4>
 				  <ul></ul>
 				</nav>
 	                  {{#if author.bio}}
 				<section class="author">
+
 				 <img src="{{author.image}}" title="{{author.name}}"/>
 
 				      <section class="author-name">{{author.name}}</section><section class="author-bio">{{author.bio}}</section>
@@ -52,8 +54,11 @@
                 <a href="mailto:c.trauma@dreamcycle.net"><i class="fa fa-envelope-o"></i></a>
                 <a href="http://careers.stackoverflow.com/wscottdillman"><i class="fa fa-file-text-o"></i></a>
             </div>
+
           </div>
+                <img id="birds" src="{{asset "img/birds.png"}}">
 				</section>
+
 				{{/if}}
                   </footer>
 		  {{/post}}

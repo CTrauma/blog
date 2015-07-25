@@ -33,12 +33,44 @@ code[class*="language-"]{
     word-wrap: break-word;       /* IE 5.5+ */
 }
 
+main.content article h1.post-title {
+font-size: 1.0em;
+}
+
+main.content article .post-content h1 {
+font-size: 3.5em;
+}
+
+main.content article .post-content h5 {
+font-size: 2.0em;
+}
+
+main.content  {
+font-size: 2.25em;
+}
+
+
+main.content article h2.post-title{
+    font-size: 1.0em;
+}
 
 .social-links{
     position:absolute; 
-    bottom:10px; 
+    bottom:0.1em; 
     float: right;
-    right: 10px;
+    right: 0.45em;
+    color: #71BFD5;
+}
+
+#birds {
+    position: absolute;
+    z-index: 65;
+    bottom: 0.8em;
+    right: 0.2em;
+    opacity: 0.20;
+    pointer-events: none;
+    width: 15em;
+    height: 15em;
 }
 
 section.author-name{
@@ -49,30 +81,35 @@ section.author-name{
     font-style: normal !important;
     text-transform: uppercase;
     font-size: 1.5em;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.65em;
+    margin-top: 0.65em;
 }
 
 section.author-bio{
     letter-spacing: -0.025em;
-    line-height: 0.85;
+    line-height: 1.00;
     font-style: normal !important;
     text-transform: uppercase;
     font-size: 1.0em;
-    margin-bottom: 10px;
+    margin-bottom: 0.65em;
 }
 
+main.content footer.post-footer {
+    position: relative;
+    overflow: visible;
+}
 
 main.content footer.post-footer .author{
-    padding: 10px;
+    padding: 0.65em;
     min-height: 0;
+    position: relative;
 }
 .author img {
-    border-radius: 25px;
+    border-radius: 0.65em;
     width: 8em;
     height: 8em;
     float: left;
-    margin-right: 10px;
+    margin-right: 0.65em;
 }
 section
 pre.line-numbers > code {

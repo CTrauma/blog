@@ -36,7 +36,7 @@ var config = {
 		linkedIn: 'https://www.linkedin.com/in/wscottdillman',					// ex: http://linkedin.com/in/username
 		gplus: '', 						// ex: https://plus.google.com/something
 		pinterest: '',					// ex: https://pinterest.com/username
-		instagram: ''					// ex: http://instagram.com/username
+		instagram: 'http://www.instagram.com/chalktrauma'					// ex: http://instagram.com/username
 	},
 	showThemeBadge: true,				// Show or hide theme and platform credits
 	showAuthorOnPostDetail: true,		// Show author bio on post detail
