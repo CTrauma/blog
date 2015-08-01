@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism-line-numbers.css"}}" />  
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism_theme.css"}}" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//www.builtbyevolve.com/files/nerveSlider/nerveSlider.min.css">
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="http://dreamcyclestudios.com/assets/ico/favicon.ico"/>
@@ -70,6 +71,23 @@
 <script type="text/javascript" src="{{asset "js/prism-line-numbers.js"}}"></script>
 <script type="text/javascript" src="{{asset "js/prism-custom-line-numbers.js"}}"></script>
 <script src="{{asset "js/index.min.js"}}"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="//www.builtbyevolve.com/files/nerveSlider/jquery.nerveSlider.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".screenshoots").startslider({
+ sliderWidth: "644px",
+        sliderResizable: true,
+        sliderAutoPlay: false,
+        slideImageScaleMode: "center",
+        showFilmstrip: true,
+        slideTransition: "fade"
+        // More options below
+        });
+});
+</script>
+
 
 </body>
 </html>

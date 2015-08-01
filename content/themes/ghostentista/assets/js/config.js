@@ -41,7 +41,7 @@ var config = {
 	showThemeBadge: true,				// Show or hide theme and platform credits
 	showAuthorOnPostDetail: true,		// Show author bio on post detail
 	googleAnalytics: '', 				// ex: UA-XXXXX-XX, if empty will not track anything
-	logoBackground: 'rgba(66, 169, 199,0.75)',	// Enter anything which suits css background shorthand. Ex: #ffcc00, green
+	logoBackground: 'rgba(229, 162, 16,0.75)',	// Enter anything which suits css background shorthand. Ex: #ffcc00, green
 	appendContent: null					// HTML or text to be appended just before closing body tag
 }
 
