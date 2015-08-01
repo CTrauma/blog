@@ -46,7 +46,7 @@ font-size: 2.0em;
 }
 
 main.content  {
-font-size: 2.25em;
+font-size: 2.5em;
 margin: 20em auto 0;
 min-height: 20em;
 }
@@ -54,10 +54,15 @@ min-height: 20em;
 h1.blog-title{
 
 }
-
-#site-head-content{
+header#site-head #site-head-content{
     
 }
+
+header#site-head 
+h1{
+    text-transform: none;
+}
+
 main.content article h2.post-title{
     font-size: 2.5em;
 }
